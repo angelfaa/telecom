@@ -82,6 +82,7 @@ body{
     color:#000;
 }
 .sec1{margin-top: 80px;
+    min-height: 450px;
     border-radius:10px;
     border: 1px solid #000;
     box-shadow:10px 7px 7px black;
@@ -99,7 +100,8 @@ body{
 }
 .mision{
     width:40%;
-    margin:-10px 5%
+    margin:-10px 5%;
+    
 }
 .sec2{margin-top: 100px;}
 .secionimagen{
@@ -300,10 +302,120 @@ footer div{
     }
 }
 @media screen and (max-width: 800px){
+    .opcion1 ,.opcion2{
+        top:180px;
+    }
+    .barra{
+        display:inline;
+    }
+    .nav ul{
+        margin:0;
+        padding:0;
+    }
+    .nav li{
+        display: inline;
+        font-family: serif;
+        margin-bottom: 0;
+    }
+    .nav a{
+        text-decoration:none;
+        font-size:0.7em
+        
+    }
+    .listaOp a{
+        color:#fdd;
+    }
+    .lista{
+        padding:10px;
+    }
+    .nav{
+        margin-right:0;
+        display:block;
+    }
     .formulario label{
         display:block;        
     }
     #apellido,#edad,#nombre,#area,#dni,#email,.est,#calendario{
         margin-left: 10%;
+    }
+    #area{
+        margin: 0;
+    }
+    .areas{
+        margin-left: 10%;
+    }
+    .cel{
+        margin: 10px 0;
+    }
+    .botones{
+        width: 100%;
+        border: 1px solid rgba(0, 0, 255, 0.884);
+    }
+    #submit,#reset{
+        width: 40%;
+    }
+    .sec1 img{
+        width:90%;
+    }  
+    .descripcion{
+        display:block;
+    }
+    .mision{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 538px){    
+    .opcion1,.opcion2{
+        top:190px;
+    }
+    .botonimg{
+        width:40px;
+        padding:0;
+        height: 40px;display:flex;
+        position: relative;
+        top:100px;
+        background-color: #fff;
+        border-radius: 8px;
+    }   
+    .nav{
+        display:flex;
+        position:absolute;
+        z-index: 3;
+        top: 170px;
+        
+    }
+    .sec1 img{
+        width:90%;
+    }  
+    .descripcion{
+        display:block;
+    }
+    .mision{
+        width: 90%;
+    }
+    .cimagen{
+        width: 100%;
+    }
+    .contactos{
+        display:block;
+    }
+    .formulario{
+        width:90%
+    }
+    iframe{
+        margin-bottom: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    footer div{
+        display:block;
+    }
+    .redes{
+        display:flex;
+        justify-content:space-between;
+        width:100%
+    }
+    footer div a{
+        text-decoration: none;
     }
 }
