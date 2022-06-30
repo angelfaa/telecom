@@ -349,7 +349,6 @@ footer div{
     }
     .botones{
         width: 100%;
-        border: 1px solid rgba(0, 0, 255, 0.884);
     }
     #submit,#reset{
         width: 40%;

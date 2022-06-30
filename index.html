@@ -96,12 +96,8 @@
                         <label for="">DNI:</label><input type="number"id="dni"required><br>
                         <label for="">Cel:</label><span class="areas"style="color:#fff"> +54 (</span><input type="number"id="area"required><span style="color:#fff">) 15 -</span><input type="number"id="celular"required><br>
                         <label for="">Email</label><input type="email"id="email"class="w8"required><br>
-                        <label>Tipo de Consulta:</label><input class="radio est"type="radio" name="estado"required><span style="color:#fff">Presencial</span><input class="radio"type="radio" name="estado"required><span style="color:#fff">Remota</span><br>
-                        <label>Eliga como lo asesoramos</label>    <select name="consula"id="select" required>
-                                <option>Consulta Escrita</option>
-                                <option>Consulta Oral</option>
-                                <option>Consulta Por Llamada</option>
-                                <option>Consulta Videollamada</option>
+                        <label>Tipo de Consulta:</label><input class="radio est"type="radio"name="estado"id="estados"required value="1" onclick="radios()"><span style="color:#fff">Presencial</span><input class="radio"type="radio" id="estados2" name="estado"required onclick="radios()"><span style="color:#fff">Remota</span><br>
+                        <label>Eliga como lo asesoramos</label>    <select name="consula"id="select" required disabled >
                             </select><br>
                         <label for="">Descripcion breve de la consulta</label><br>
                         <textarea required></textarea ><br>

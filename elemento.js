@@ -45,3 +45,31 @@ celul.addEventListener('keypress', (event) => {
       celula.value = celula.value + valorParsed
     }
   })
+  function radios(){
+    let elemento= document.getElementById("estados")
+    let elemento1= document.getElementById("estados2")
+    let selecto=document.getElementById("select")
+    if(elemento.checked){
+      selecto.removeAttribute("disabled");
+      if(selecto.length>1){
+        selecto.remove(0);
+        selecto.remove(1);
+      }
+      if(selecto.length<2){
+        selecto.options[0]=new Option("Consulta Escrita")
+        selecto.options[1]=new Option("Consulta Oral")
+      }
+      
+    }
+    if(elemento1.checked){
+      selecto.removeAttribute("disabled");
+      if(selecto.length>1){
+        selecto.remove(0);
+        selecto.remove(1);
+      }
+      if(selecto.length<2){
+        selecto.options[0]=new Option("Consulta Por llamada")
+        selecto.options[1]=new Option("Consulta Videollamada")
+      }
+    }
+  }
